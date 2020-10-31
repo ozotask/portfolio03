@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+section{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(./../images/bg_01.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+section>h2{
+	text-indent: -9999px;
+}
+section>.tip{
+	position: absolute;
+	z-index: 500;
+	left: 50%;
+	top: 18vh;
+	margin-left: -35vw;
+	width: 70vw;
+	height: 40vw;
+	background-image: url(./../images/balloon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	overflow: hidden;
+}
+section>.tip>.title{
+	position: absolute;
+	top: 5vw;
+	left: 8.5vw;
+	width: 53vw;
+	color: #707070;
+	font-size: 4vw;
+	font-weight: 800;
+}
+
+section>.tip>.tips-container{
+	position: absolute;
+	left: 8.5vw;
+	top: 12vw;
+	width: 53vw;
+	height: 60px;
+}
+section>.tip>.tips-container>.tips{
+	position: relative;
+	left: 0;
+	display: flex;
+	height: 60px;
+}
+section>.tip>.tips-container>.tips>.text{
+	position: absolute;
+	width: 53vw;
+	font-size: 3.6vw;
+	line-height: 1.6;
+	color: #707070;
+	background-color: #f3f3f3;
+}
+@keyframes up-down{
+	0%{
+		top: 44vh;
+	}50%{
+		top: 43vh;
+	}90%{
+		top: 44vh;
+	}100%{
+		top: 44vh;
+	}
+}
+
+section>.character{
+	animation-name: up-down;
+	animation-duration: 1.6s;
+	animation-iteration-count: infinite;
+
+	position: absolute;
+	top: 40vh;
+	left: 50%;
+	margin-left: -100px;
+	display: block;
+	width: 50vw;
+	height: 30vw;
+	background-image: url(./../images/turtle.png);
+	background-repeat: no-repeat;
+	background-size: 44vw 30vw;
+	background-position: center center;
+}
+section>.character_name{
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 44vh;
+	z-index: 500;
+	margin-top: 160px;
+	color: #fff;
+	font-size: 5vw;
+	font-weight: 400;
+	text-align: center;
+}
+
+@keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	}50%{
+		transform: rotate(10deg);
+	}100%{
+		transform: rotate(0deg);
+	}
+}
+
+section .rock{
+	animation-name: rotate;
+	animation-duration: 1.6s;
+	animation-iteration-count: infinite;
+
+	position: fixed;
+	z-index: 100;
+	display: block;
+}
+.rock01{
+	animation-direction: reverse;
+	top: 65%;
+	left: 12%;
+	width: 93px;
+	height: 83px;
+	background-image: url(./../images/rock1.png);
+	opacity: 0.8;
+	transform-origin: 50% 50%;
+}
+.rock02{
+	animation-duration: 3s;
+
+	top: 77%;
+	left: 5%;
+	width: 68px;
+	height: 67px;
+	background-image: url(./../images/rock2.png);
+	opacity: 0.8;
+
+}
+.rock03{
+	top: 75%;
+	left: 38%;
+	width: 50px;
+	height: 49px;
+	background-image: url(./../images/rock3.png);
+	opacity: 0.8;
+
+}
+.rock04{
+	animation-duration: 1s;
+	top: 81%;
+	left: 53%;
+	width: 50px;
+	height: 49px;
+	background-image: url(./../images/rock4.png);
+	opacity: 0.8;
+}
+.rock05{
+	top: 67%;
+	left: 63%;
+	width: 77px;
+	height: 77px;
+	background-image: url(./../images/rock5.png);
+	opacity: 0.8;
+
+}
+.rock06{
+	animation-duration: 2s;
+
+	top: 74%;
+	left: 80%;
+	width: 77px;
+	height: 77px;
+	background-image: url(./../images/rock6.png);
+	opacity: 0.8;
+	transform: rotate(80deg);
+}

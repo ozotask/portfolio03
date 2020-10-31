@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+section{
+	position: fixed;
+	top: 6vh;
+	bottom: 6vh;
+	width: 100vw;
+	height: 88vh;
+	background-color: #f3f3f3;
+}
+
+
+section>h2{
+	text-indent: -9999px;
+	position: absolute;
+}
+
+section>.menu-title{
+	width: 100vw;
+	height: 5vh;
+	background-color: #fff;
+}
+section>.menu-title>h3{
+	font-size: 4vw;
+	color: #888;
+	line-height: 5vh;
+	font-weight: 600;
+	text-align: center;
+}
+
+section>.recycle-list{
+	display: flex;
+	overflow-y: scroll;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	width: 100vw;
+	height: 81vh;
+	padding-bottom: 4vw;
+}
+section>.recycle-list>li{
+	width: 31%;
+	margin-top: 2vw;
+	background-color: #fff;
+	box-shadow: #ccc 0px 1px 10px 1px;
+	
+}
+section>.recycle-list>li>a{
+	display: block;
+	height: 36vw;
+}
+section>.recycle-list>li>a>.recycle-list__thumb{
+	display: block;
+	width: 92%;
+	height: 20vw;
+	margin: 5px auto;
+	outline: 1px solid #eee;
+	background-image: url(./../images/how01.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+section>.recycle-list>li:nth-of-type(1)>a>.recycle-list__thumb{background-image: url(./../images/how01.png);}
+section>.recycle-list>li:nth-of-type(2)>a>.recycle-list__thumb{background-image: url(./../images/how02.png);}
+section>.recycle-list>li:nth-of-type(3)>a>.recycle-list__thumb{background-image: url(./../images/how03.png);}
+section>.recycle-list>li:nth-of-type(4)>a>.recycle-list__thumb{background-image: url(./../images/how04.png);}
+section>.recycle-list>li:nth-of-type(5)>a>.recycle-list__thumb{background-image: url(./../images/how05.png);}
+section>.recycle-list>li:nth-of-type(6)>a>.recycle-list__thumb{background-image: url(./../images/how06.png);}
+section>.recycle-list>li:nth-of-type(7)>a>.recycle-list__thumb{background-image: url(./../images/how07.png);}
+section>.recycle-list>li:nth-of-type(8)>a>.recycle-list__thumb{background-image: url(./../images/how08.png);}
+section>.recycle-list>li:nth-of-type(9)>a>.recycle-list__thumb{background-image: url(./../images/how09.png);}
+section>.recycle-list>li:nth-of-type(10)>a>.recycle-list__thumb{background-image: url(./../images/how10.png);}
+section>.recycle-list>li:nth-of-type(11)>a>.recycle-list__thumb{background-image: url(./../images/how11.png);}
+section>.recycle-list>li:nth-of-type(12)>a>.recycle-list__thumb{background-image: url(./../images/how12.png);}
+
+section>.recycle-list>li>a>.recycle-list__name{
+	display: block;
+	color: #444;
+	font-size: 3.4vw;
+	line-height: 13vw;
+	text-align: center;
+}
+
+/* 리스트 클릭 팝업 */
+
+section>.recycle-list-page{
+	display: none;
+	overflow-y: scroll;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 88vh;
+	z-index: 2000;
+	background-color: rgba(0,0,0,0.5);
+}
+section>.recycle-list-page>li{
+	overflow-y: scroll;
+	z-index: 2500;
+	width: 80vw;
+	padding: 10vw 10vw;
+	background-color: #fff;
+}
+section>.recycle-list-page>li>.close-btn{
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 11vw;
+	height: 10vw;
+	z-index: 9000;
+
+	text-indent: -9999px;
+	background-image: url(./../images/close_icon.png);
+	background-size: 5vw 5vw;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+section>.recycle-list-page>li>.recycle-list__name{
+	display: block;
+	color: #707070;
+	font-weight: 600;
+	font-size: 5vw;
+	text-align: center;
+}
+section>.recycle-list-page>li>.recycle-list__thumb{
+	display: block;
+	width: 60vw;
+	height: 40vw;
+	margin: 20px auto;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid #eee;
+}
+section>.recycle-list-page>li:nth-of-type(1)>.recycle-list__thumb{background-image: url(./../images/how01.png);}
+section>.recycle-list-page>li:nth-of-type(2)>.recycle-list__thumb{background-image: url(./../images/how02.png);}
+section>.recycle-list-page>li:nth-of-type(3)>.recycle-list__thumb{background-image: url(./../images/how03.png);}
+section>.recycle-list-page>li:nth-of-type(4)>.recycle-list__thumb{background-image: url(./../images/how04.png);}
+section>.recycle-list-page>li:nth-of-type(5)>.recycle-list__thumb{background-image: url(./../images/how05.png);}
+section>.recycle-list-page>li:nth-of-type(6)>.recycle-list__thumb{background-image: url(./../images/how06.png);}
+section>.recycle-list-page>li:nth-of-type(7)>.recycle-list__thumb{background-image: url(./../images/how07.png);}
+section>.recycle-list-page>li:nth-of-type(8)>.recycle-list__thumb{background-image: url(./../images/how08.png);}
+section>.recycle-list-page>li:nth-of-type(9)>.recycle-list__thumb{background-image: url(./../images/how09.png);}
+section>.recycle-list-page>li:nth-of-type(10)>.recycle-list__thumb{background-image: url(./../images/how10.png);}
+section>.recycle-list-page>li:nth-of-type(11)>.recycle-list__thumb{background-image: url(./../images/how11.png);}
+section>.recycle-list-page>li:nth-of-type(12)>.recycle-list__thumb{background-image: url(./../images/how12.png);}
+
+section>.recycle-list-page>li>.recycle-list__text{
+	font-size: 15px;
+	line-height: 1.8;
+}
+section>.recycle-list-page>li>.recycle-list__text>span{
+	display: block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	font-size: 15px;
+	font-weight: 600;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}

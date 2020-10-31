@@ -1,0 +1,520 @@
+@charset "utf-8";
+
+section{
+	position: absolute;
+	top: 6vh;
+	width: 100vw;
+	height: 88vh;
+	padding-bottom: 60px;
+	background-color: #f3f3f3;
+	overflow-y: hidden;
+}
+
+
+section>h2{
+	text-indent: -9999px;
+	position: absolute;
+}
+
+section>.menu-title{
+	display: flex;
+	width: 100vw;
+	height: 5vh;
+	background-color: #fff;
+}
+section>.menu-title>h3{
+	width: 50%;
+	font-size: 4vw;
+	color: #888;
+	height: 5vh;
+	line-height: 5vh;
+	font-weight: 600;
+	text-align: center;
+}
+section>.menu-title>h3.on{
+	color: #fff;
+	background-color: #08C0B4;
+}
+
+/* MY POINT 영역 */
+.my-point-container{
+	width: 100vw;
+}
+
+.my-point-container>.my-point__frame{
+	width: 90vw;
+	height: 38vw;
+	margin: 5vw auto;
+	background-color: #fff;
+	border-radius: 5vw;
+	box-shadow: rgba(0,0,0,0.07) 0px 1px 10px 1px;
+}
+.my-point-container>.my-point__frame>p{
+	width: 20vw;
+	margin: 0 auto;
+	padding: 6vw 0 2vw 0;
+	font-size: 4vw;
+	color: #888;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+.my-point-container>.my-point__frame>.now-point{
+	display: flex;
+	justify-content: center;
+	margin: 5vw auto;
+}
+
+.my-point-container>.my-point__frame>.now-point>span{
+	color: #444;
+	font-size: 8vw;
+	font-weight: 800;
+}
+.my-point-container>.my-point__frame>.now-point>.coin-icon{
+	display: block;
+	width: 10vw;
+	height: 10vw;
+	margin-left: 2vw;
+	background-image: url(./../images/coin_big_icon.png);
+	background-repeat: no-repeat;
+	background-size: 9vw 8.5vw;
+	background-position: center center;
+}
+
+.my-point-container>.my-point__history{
+	width: 100vw;
+	background-color: #fff;
+}
+.my-point-container>.my-point__history>.sub-menu-title{
+	display: flex;
+	align-items: flex-end;
+	width: 100vw;
+	height: 6vh;
+	background-color: #08C0B4;
+}
+.my-point-container>.my-point__history>.sub-menu-title>span{
+	width: 50%;
+	font-size: 5vw;
+	height: 5vh;
+	color: #fff;
+	font-size: 3.4vw;
+	line-height: 5vh;
+	font-weight: 600;
+	text-align: center;
+
+}
+.my-point-container>.my-point__history>.sub-menu-title>span.on{
+	color: #444;
+	background-color: #fff;
+	border-radius: 4vw 4vw 0 0;
+}
+.my-point-container>.my-point__history>.order{
+	cursor: pointer;
+	position: relative;
+	top: 2vw;
+	left: 74vw;
+	
+	display: block;
+	width: 24vw;
+	height: 10vw;
+	color: #888;
+	line-height: 10vw;
+	background-image: url(./../images/order-icon.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 7vw 6vw;
+}
+
+.my-point-container>.my-point__history>.history-list>ol{
+	width: 100vw;
+	height: 49vh;
+	overflow-y: scroll;
+	margin-top: 4vw;
+}
+
+.my-point-container>.my-point__history>.history-list>ol:last-child{
+	display: none;
+}
+.my-point-container>.my-point__history>.history-list>ol>li{
+	position: relative;
+	height: 16vw;
+	line-height: 16vw;
+	border-top: 1px solid #ddd;
+}
+.my-point-container>.my-point__history>.history-list>ol>li>span{
+	margin-left: 4vw;
+}
+.my-point-container>.my-point__history>.history-list>ol>li>.time{
+	position: absolute;
+	right: 5vw;
+}
+
+/* OX 퀴즈 영역 */
+.quiz-container{
+	display: none;
+	position: relative;
+	overflow-y: hidden;
+	width: 100vw;
+	height: 83vh;
+	background-image: url(./../images/bg_01.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.quiz-container>.quiz-bg>.tip{
+	position: absolute;
+	z-index: 500;
+	left: 50%;
+	top: 6vh;
+	margin-left: -30vw;
+	width: 60vw;
+	height: 60vw;
+	background-image: url(./../images/balloon-big.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 60vw 60vw;
+	overflow: hidden;
+}
+.quiz-container>.quiz-bg>.tip>.title{
+	position: absolute;
+	top: 10vw;
+	left: 8.5vw;
+	width: 43vw;
+	color: #707070;
+	font-size: 4vw;
+	font-weight: 800;
+}
+
+.quiz-container>.quiz-bg>.tip>.tips-container{
+	position: absolute;
+	left: 8.5vw;
+	top: 20vw;
+	width: 43vw;
+	height: 24vw;
+}
+.quiz-container>.quiz-bg>.tip>.tips-container>.tips{
+	position: relative;
+	left: 0;
+	display: flex;
+	height: 24vw;
+}
+.quiz-container>.quiz-bg>.tip>.tips-container>.tips>.text{
+	position: absolute;
+	width: 43vw;
+	font-size: 4vw;
+	line-height: 1.6;
+	color: #707070;
+	background-color: #f3f3f3;
+}
+@keyframes up-down{
+	0%{
+		top: 39vh;
+	}50%{
+		top: 38vh;
+	}90%{
+		top: 39vh;
+	}100%{
+		top: 39vh;
+	}
+}
+
+.quiz-container>.quiz-bg>.character{
+	animation-name: up-down;
+	animation-duration: 1.6s;
+	animation-iteration-count: infinite;
+
+	position: absolute;
+	top: 40vh;
+	left: 50%;
+	margin-left: -25vw;
+	display: block;
+	width: 50vw;
+	height: 30vw;
+	background-image: url(./../images/turtle.png);
+	background-repeat: no-repeat;
+	background-size: 36vw 24vw;
+	background-position: center center;
+}
+.quiz-container>.quiz-bg>.character_name{
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 44vh;
+	z-index: 500;
+	margin-top: 160px;
+	color: #fff;
+	font-size: 5vw;
+	font-weight: 400;
+	text-align: center;
+}
+
+.quiz-container>.title{
+	display: block;
+	position: absolute;
+	bottom: 42vw;
+	left: 30vw;
+	z-index: 1000;
+
+	width: 40vw;
+	height: 10vw;
+	
+	color: #444;
+	font-size: 4vw;
+	font-weight: 600;
+	line-height: 8vw;
+	text-align: center;
+	
+	background-image: url(./../images/quiz-ribbon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 40vw 10vw;
+}
+.quiz-container>.quiz-answer-container{
+	position: absolute;
+	bottom: 10vw;
+	left: 5vw;
+	display: block;
+	width: 90vw;
+	height: 36vw;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 5vw;
+}
+
+.quiz-container>.quiz-answer-container>.quiz-answer__choice{
+	display: flex;
+	width: 100%;
+	height: 36vw;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.quiz-container>.quiz-answer-container>.quiz-answer__choice>span{
+	cursor: pointer;
+	width: 22vw;
+	height: 22vw;
+	text-indent: -9999px;
+	background-color: #fff;
+	border-radius: 22vw;
+	background-repeat: no-repeat;
+	background-image: url(./../images/correction.png);
+	background-size: 15vw 15vw;
+	background-position: center center;
+}
+.quiz-container>.quiz-answer-container>.quiz-answer__choice>span:last-child{
+	background-image: url(./../images/wrong.png);
+}
+
+.quiz-container>.quiz-answer-container>.quiz-answer__correction{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90vw;
+	height: 36vw;
+	color: #888;
+	font-size: 4vw;
+	line-height: 8vw;
+}
+.quiz-container>.quiz-answer-container>.quiz-answer__correction>span{
+	margin-top: -1vw;
+	color: #444;
+	font-size: 7vw;
+	line-height: 7vw;
+	font-weight: 800;
+}
+.quiz-container>.quiz-answer-container>.quiz-answer__correction>.coin-icon{
+	display: block;
+	width: 8vw;
+	height: 8vw;
+	margin: 0 2vw;
+	background-image: url(./../images/coin_big_icon.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.quiz-container>.quiz-answer-container>.quiz-answer__wrong{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90vw;
+	height: 36vw;
+	color: #444;
+	font-size: 4vw;
+	line-height: 8vw;
+}
+
+/* 다시쓰기 영역 */
+
+.reuse-container{
+	display: none;
+	width: 100vw;
+	height: 77vh;
+	padding-top: 10vw;
+	overflow-y: scroll;
+}
+.reuse-container>.reuse__stamp-container{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+}
+.reuse-container>.reuse__stamp-container>.stamp-bg{
+	position: relative;
+	width: 20vw;
+	height: 20vw;
+	margin: 5vw;
+
+	color: rgb(240, 149, 12);
+	font-size: 5vw;
+	font-weight: 800;
+	line-height: 20vw;
+	text-align: center;
+	border: 2px solid #ddd;
+	border-radius: 15vw;
+
+}
+.reuse-container>.reuse__stamp-container>.stamp-bg:last-child{
+	background-color: rgb(255, 207, 74);
+	border-color: rgb(240, 149, 12);
+}
+.reuse-container>.reuse__stamp-container>.stamp-bg>.stamp-img{
+	position: absolute;
+	top: 0;
+	left: -4vw;
+	display: block;
+	width: 28vw;
+	height: 20vw;
+	background-repeat: no-repeat;
+	background-image: url(./../images/stamp.png);
+	background-size: contain;
+}
+.reuse-container>.reuse__stamp-container>.stamp-bg:nth-child(n+8)>.stamp-img{
+	display: none;
+	background-image: unset;
+}
+
+.reuse-container>span{
+	cursor: pointer;
+	display: block;
+	width: 70vw;
+	height: 14vw;
+	margin: 10vw auto;
+	color: #fff;
+	font-size: 4vw;
+	line-height: 14vw;
+	text-align: center;
+	background-color: #08C0B4;
+	border-radius: 14vw;
+}
+
+/* 포인트샵 영역 */
+
+.point-shop-container{
+	display: none;
+	width: 100vw;
+	height: 83vh;
+	padding-top: 2vh;
+	overflow-y: scroll;
+}
+.point-shop-container>.my-point-now{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60vw;
+	height: 10vw;
+	margin: 0 auto;
+	color: #444;
+	font-size: 4vw;
+	font-weight: 800;
+	line-height: 10vw;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 10vw;
+	box-shadow: rgba(0,0,0,0.07) 0px 1px 10px 1px;
+
+}
+
+.point-shop-container>.my-point-now>span{
+	display: block;
+}
+.point-shop-container>.my-point-now>.coin-icon{
+	display: block;
+	width: 6vw;
+	height: 6vw;
+	margin-left: 2vw;
+	background-image: url(./../images/coin_icon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 5vw 5vw;
+
+}
+
+.point-shop-container>.shop-list{
+	display: flex;
+	justify-content: space-evenly;
+	flex-flow: row wrap;
+	width: 100vw;
+	padding: 5vw 0;
+}
+.point-shop-container>.shop-list>li{
+	cursor: pointer;
+	position: relative;
+	width: 42vw;
+	height: 56vw;
+	background-color: #fff;
+	margin-bottom: 3vw;
+	padding: 2vw;
+	box-shadow: rgba(0,0,0,0.1) 0px 1px 10px 1px;
+}
+.point-shop-container>.shop-list>li>.shop-thumb{
+	display: block;
+	width: 42vw;
+	height: 28vw;
+	margin-bottom: 2vw;
+	background-repeat: no-repeat;
+	background-image: url(./../images/shop01.png);
+	background-position: center center;
+	background-size: contain;
+	border: 1px solid #eee;
+}
+.point-shop-container>.shop-list>li>.shop-brand{
+	display: block;
+	margin-bottom: 1vw;
+	margin: 0 2vw;
+
+	font-size: 3.4vw;
+	font-weight: 600;
+}
+.point-shop-container>.shop-list>li>.shop-item{
+	margin-bottom: 2vw;
+	margin: 0 2vw;
+	display: -webkit-box;
+	word-wrap: break-word;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.point-shop-container>.shop-list>li>.shop-price-container{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 46vw;
+	height: 8vw;
+	background-color: #f3f3f3;
+}
+.point-shop-container>.shop-list>li>.shop-price-container>.shop-price{
+	display: block;
+	font-size: 3.6vw;
+	font-weight: 800;
+	line-height: 5vw;
+	margin-right: 1vw;
+}
+.point-shop-container>.shop-list>li>.shop-price-container>.coin-icon{
+	display: block;
+	width: 5vw;
+	height: 5vw;
+	margin-right: 3vw;
+	background-image: url(./../images/coin_icon.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
